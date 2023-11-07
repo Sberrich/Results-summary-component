@@ -14,15 +14,15 @@
 
 <body>
   <!-- all app -->
-  <div class="w-screen h-screen bg-White flex items-center justify-center font-Hanken text-customSize">
+  <div class="w-screen h-screen bg-White flex  items-center justify-center font-Hanken text-customSize">
     <!-- card -->
-    <main class="w-1/2 h-1/2 flex items-center justify-between shadow-2xl shadow-Lightlavender rounded-3xl bg-white">
+    <main class="md:w-auto md:h-auto h-full w-full flex flex-col md:flex-row  items-center justify-between shadow-2xl shadow-Lightlavender rounded-3xl bg-white">
       <!-- result section  -->
       <section
-        class="flex flex-col items-center justify-start space-y-10 w-1/2 h-full bg-gradient-to-tr from-Violetblue to-Lightslateblue p-8 rounded-3xl">
+        class="flex flex-col items-center justify-start space-y-10 md:w-1/2  md:h-full h-1/2 w-full bg-gradient-to-tr from-Violetblue to-Lightslateblue p-8 md:rounded-3xl rounded-b-3xl">
         <span class="text-Lightlavender font-customBold text-2xl">Your Result</span>
         <article
-          class="flex flex-col justify-center items-center w-48 h-48 bg-gradient-to-b from-Violetblue to-Lightslateblue rounded-full shadow-Lightslateblue shadow-xl-inset  text-White">
+          class="flex flex-col justify-center items-center w-48 h-48  bg-gradient-to-b from-Violetblue to-Lightslateblue rounded-full shadow-Lightslateblue shadow-xl-inset  text-White">
           <span class="font-customExtrabold text-6xl">76</span>
           <span class="font-customnormal text-customSize text-Lightlavender opacity-50">of 100</span>
 
@@ -35,7 +35,7 @@
       </section>
       <!-- summary section -->
       <section
-        class="flex flex-col items-left justify-between gap-4 w-1/2 h-full bg-White p-8 rounded-3xl text-Darkgrayblue">
+        class="flex flex-col items-left justify-between gap-4 md:w-1/2 md:h-full h-full w-full bg-White p-8 rounded-3xl text-Darkgrayblue">
         <article>
           <aside class="flex flex-col justify-between gap-6">
             <span class=" font-customBold text-2xl"> Summary</span>
@@ -119,8 +119,9 @@
 
             </div>
           </aside>
-          <button> Continue</button>
         </article>
+        <button class="w-[90%] bg-Darkgrayblue rounded-full p-4 text-White font-customBold hover:bg-Lightslateblue"> Continue</button>
+
       </section>
     </main>
   </div>
