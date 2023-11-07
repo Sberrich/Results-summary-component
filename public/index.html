@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./fonts.css">
+  <link rel="stylesheet" href="./output.css">
+  <title>Results summary component</title>
+</head>
+
+<body>
+  <!-- all app -->
+  <div class="w-screen h-screen bg-White flex items-center justify-center font-Hanken text-customSize">
+    <!-- card -->
+    <main class="w-1/2 h-1/2 flex items-center justify-between shadow-2xl shadow-Lightlavender rounded-3xl bg-white">
+      <!-- result section  -->
+      <section
+        class="flex flex-col items-center justify-start space-y-10 w-1/2 h-full bg-gradient-to-tr from-Violetblue to-Lightslateblue p-8 rounded-3xl">
+        <span class="text-Lightlavender font-customBold text-2xl">Your Result</span>
+        <article
+          class="flex flex-col justify-center items-center w-48 h-48 bg-gradient-to-b from-Violetblue to-Lightslateblue rounded-full shadow-Lightslateblue shadow-xl-inset  text-White">
+          <span class="font-customExtrabold text-6xl">76</span>
+          <span class="font-customnormal text-customSize text-Lightlavender opacity-50">of 100</span>
+
+        </article>
+        <article class="flex flex-col justify-center gap-4 items-center text-center text-White ">
+          <span class="font-customBold text-3xl">Great</span>
+          <p class="text-xl font-customnormal opacity-60 w-[65%]"> You scored higher than 65% of the people who have
+            taken these tests.</p>
+        </article>
+      </section>
+      <!-- summary section -->
+      <section
+        class="flex flex-col items-left justify-between gap-4 w-1/2 h-full bg-White p-8 rounded-3xl text-Darkgrayblue">
+        <article>
+          <aside class="flex flex-col justify-between gap-6">
+            <span class=" font-customBold text-2xl"> Summary</span>
+            <!-- reaction -->
+            <div
+              class=" font-customBold flex items-center justify-between w-[90%] bg-Lightred bg-opacity-10 rounded-xl p-4">
+              <div class="flex items-center justify-between gap-2 text-Lightred">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20">
+                  <path stroke="#F55" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25"
+                    d="M10.833 8.333V2.5l-6.666 9.167h5V17.5l6.666-9.167h-5Z" />
+                </svg>
+                <span>Reaction</span>
+              </div>
+
+              <div class="">
+                <span>80</span>
+                <span class="opacity-50">/</span>
+                <span class="opacity-50">100</span>
+              </div>
+
+            </div>
+
+            <!-- Memory -->
+            <div
+              class=" font-customBold flex items-center justify-between w-[90%] bg-Orangeyellow bg-opacity-10 rounded-xl p-4">
+              <div class="flex items-center justify-between gap-2 text-Orangeyellow">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20">
+                  <path stroke="#FFB21E" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25"
+                    d="M5.833 11.667a2.5 2.5 0 1 0 .834 4.858" />
+                  <path stroke="#FFB21E" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25"
+                    d="M3.553 13.004a3.333 3.333 0 0 1-.728-5.53m.025-.067a2.083 2.083 0 0 1 2.983-2.824m.199.054A2.083 2.083 0 1 1 10 3.75v12.917a1.667 1.667 0 0 1-3.333 0M10 5.833a2.5 2.5 0 0 0 2.5 2.5m1.667 3.334a2.5 2.5 0 1 1-.834 4.858" />
+                  <path stroke="#FFB21E" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25"
+                    d="M16.447 13.004a3.334 3.334 0 0 0 .728-5.53m-.025-.067a2.083 2.083 0 0 0-2.983-2.824M10 3.75a2.085 2.085 0 0 1 2.538-2.033 2.084 2.084 0 0 1 1.43 2.92m-.635 12.03a1.667 1.667 0 0 1-3.333 0" />
+                </svg>
+                <span>Memory</span>
+              </div>
+
+              <div class="">
+                <span>92</span>
+                <span class="opacity-50">/</span>
+                <span class="opacity-50">100</span>
+              </div>
+
+            </div>
+            <!-- Verbal -->
+            <div
+              class=" font-customBold flex items-center justify-between w-[90%] bg-Greenteal bg-opacity-10 rounded-xl p-4">
+              <div class="flex items-center justify-between gap-2 text-Greenteal">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20">
+                  <path stroke="#00BB8F" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25"
+                    d="M7.5 10h5M10 18.333A8.333 8.333 0 1 0 1.667 10c0 1.518.406 2.942 1.115 4.167l-.699 3.75 3.75-.699A8.295 8.295 0 0 0 10 18.333Z" />
+                </svg>
+                <span>Verbal</span>
+              </div>
+
+              <div class="">
+                <span>61</span>
+                <span class="opacity-50">/</span>
+                <span class="opacity-50">100</span>
+              </div>
+
+            </div>
+            <!-- Visual -->
+            <div
+              class=" font-customBold flex items-center justify-between w-[90%] bg-Cobaltblue bg-opacity-10 rounded-xl p-4">
+              <div class="flex items-center justify-between gap-2 text-Cobaltblue">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20">
+                  <path stroke="#1125D6" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25"
+                    d="M10 11.667a1.667 1.667 0 1 0 0-3.334 1.667 1.667 0 0 0 0 3.334Z" />
+                  <path stroke="#1125D6" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25"
+                    d="M17.5 10c-1.574 2.492-4.402 5-7.5 5s-5.926-2.508-7.5-5C4.416 7.632 6.66 5 10 5s5.584 2.632 7.5 5Z" />
+                </svg>
+                <span>Visual</span>
+              </div>
+
+              <div class="">
+                <span>61</span>
+                <span class="opacity-50">/</span>
+                <span class="opacity-50">100</span>
+              </div>
+
+            </div>
+          </aside>
+          <button> Continue</button>
+        </article>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
