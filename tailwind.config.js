@@ -1,6 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   // content: ["./public/**/*/{html,js}"],
+
+
+  darkMode: 'class',
   content: ["./public/**/*.{html,js}"],
   theme: {
     extend: {
@@ -37,6 +40,7 @@ module.exports = {
         customSize: '18px',
       }
     },
+
   },
   plugins: [],
 }
